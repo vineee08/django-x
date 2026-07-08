@@ -13,10 +13,15 @@ SECRET_KEY = "django-insecure-0peo@#x9jur3!h$ryje!$879xww8y1y66jx!%*#ymhg&jkozs2
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "0.0.0.0",
+    "django-x.onrender.com",
+]
 
 
 # Application definition
@@ -201,6 +206,7 @@ ACCOUNT_UNIQUE_EMAIL = True
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#csrf-trusted-origins
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8000",  # Default Django dev server
-    "http://127.0.0.1:8000",  # Alternative local address
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "https://django-x.onrender.com",
 ]
